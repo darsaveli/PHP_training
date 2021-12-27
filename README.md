@@ -133,3 +133,92 @@ $name = "Mari";
 $variableName = "name";
 echo $$variableName;
 ```
+
+#### Arrays (ways of storing a number of different values in the same object) in PHP
+
+```php
+$myArray = array("a", "b", "c", "d");
+print_r($myArray);
+shows -->
+```
+
+`Array ( [0] => a [1] => b [2] => c [3] => d )`
+
+`print_r` shows the contents of the array (_r stands for readable)
+
+In the page source, it displays like -->
+
+```php
+Array
+( 
+   [0] => a 
+   [1] => b 
+   [2] => c 
+   [3] => d
+)
+```
+
+* Get items from Array
+
+```php
+echo $myArray[1];
+```
+
+displays `b`
+
+* Define an array by creating values manually:
+
+the arrays are associative, meaning you can put anything you like in the index, e.g. jump from 2 to 5 or call it "myFavouriteFood"
+
+```php
+$anotherArray[0] = "a";
+$anotherArray[2] = "b";
+$anotherArray["myFavouriteFood"] = "ice cream";
+print_r($anotherArray);
+```
+
+* Putting line breaks:
+
+```php
+echo "<br><br>";
+```
+
+* If you want to make an associative PHP array like "myFavouriteFood" to store info about password, username, etc, then:
+
+```php
+$thirdArray = array("France" => "French", "USA" => "English");
+print_r($thirdArray);
+```
+Shows -->
+`Array ( [France] => French [USA] => English )`
+
+* Get the length of the array (number of items in the array)
+```php
+echo sizeof($thirdArray);
+```
+Shows -->
+`2`
+
+* Add an item to the end of an array
+
+```php
+$myArray = array("a", "b", "c", "d");
+$myArray[] = "e";
+print_r($myArray);
+```
+
+* Remove item using unset command
+```php
+$myArray = array("a", "b", "c", "d");
+unset($myArray["0"]);
+print_r($myArray);
+```
+Shows -->
+```php
+Array 
+( 
+   [1] => b 
+   [2] => c 
+   [3] => d 
+)
+```
