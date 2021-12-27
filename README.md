@@ -17,7 +17,7 @@ So languages that work on the web server allow us to do the web service-specific
 * .php file can contain HTML, CSS, JS and PHP code.
 
 ### Tips:
-##### How to display error messages in PHP (if you forged " or smth else)
+#### How to display error messages in PHP (if you forged " or smth else)
 * create a separate new file, call it php.ini, it will contain initialization options
 * set 2 variables
 * `error_reporting = E_ALL`
@@ -33,4 +33,103 @@ So languages that work on the web server allow us to do the web service-specific
 <?php 
 some php code here
 ?>
+```
+
+#### String variables (containing a string of characters) in PHP
+
+```php
+<?php
+$name = "Rob";
+?>
+```
+
+example:
+```php
+<?php
+$name = "Rob";
+echo "My name is $name";
+?>
+```
+
+It will display variable value -->
+
+`my name is Rob`
+
+```php
+<?php
+$name = "Rob";
+echo $name;
+?>
+```
+
+it will display -->
+
+`Rob`
+
+* How to put strings together (Concatenating)
+
+```php
+$string1 = "This is the 1st part of a sentence";
+$string2 = "here you have the 2nd one";
+echo $string1.$string2;
+```
+
+`." ".` is used to put a space between strings
+
+you can put HTML inside those strings to make them appear on different lines. Add `<p>` tag.
+
+```php
+$string1 = "<p>This is the 1st part of a sentence</p>";
+$string2 = "<p>here you have the 2nd one</p>";
+echo $string1." ".$string2;
+```
+
+* PHP Variables containing a string of numbers
+
+```php
+$myNumber = 45;
+$calculation = $myNumber * 31 / 97 + 4;
+echo $calculation;
+```
+
+it will display -->
+
+`18.381443298969`
+
+for multiplication use asterisk (*)
+
+```php
+$myNumber = 45;
+$calculation = $myNumber * 31 / 97 + 4;
+echo "The result of the calculation is ".$calculation;
+```
+
+* Boolean variables in PHP
+
+```php
+$myBool = true;
+echo "<p>This statement is true? ".$myBool."</p>";
+```
+
+It will show -->
+
+`1`
+
+```php
+$myBool = false;
+echo "<p>This statement is true? ".$myBool."</p>";  
+```
+
+It will show -->
+
+`0 or nothing`
+
+Note: it doesn't give true false, but 1 or 0. This is how PHP treats true and false. 
+
+* Store Variable names within variables:
+
+```php
+$name = "Mari";
+$variableName = "name";
+echo $$variableName;
 ```
