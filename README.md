@@ -35,6 +35,8 @@ some php code here
 ?>
 ```
 
+<h1 align="center"> Variables </h1>
+   
 #### String variables (containing a string of characters) in PHP
 
 ```php
@@ -134,6 +136,8 @@ $variableName = "name";
 echo $$variableName;
 ```
 
+   <h1 align="center"> Arrays </h1>
+
 #### Arrays (ways of storing a number of different values in the same object) in PHP
 
 ```php
@@ -222,3 +226,193 @@ Array
    [3] => d 
 )
 ```
+
+<h1 align="center"> If statements </h1>
+
+```php
+$user = "rob";
+if ($user == "rob") {
+    echo "Hi Rob!";
+}   else {
+    echo "I don't know you";
+}
+```
+   
+```php
+$age = 25;
+if ($age >= 18 || $user == "rob" ) {
+    echo "you may proceed..";
+} else {
+    echo "You're too young, sorry!";
+}
+```
+Note: || means OR
+
+<h1 align="center"> Loops </h1>
+
+#### For loops
+
+When Gmail is showing all of your emails that's a loop because it's looping all the emails and displays them for you.
+
+`for` loop
+`var` counter variable
+`i` counter variable name
+`i = 0` setting `i` to its initial value
+
+```php
+for ($i = 0; $i < 10; $i++) {
+      echo #i."<br>";
+}
+```
+
+it will display
+`
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+`
+
+```php
+for ($i = 2; $i <= 30; $i = $i + 2) {
+      echo #i."<br>";
+}
+```
+
+it will display
+`
+2
+4
+6
+8
+10
+12
+14
+`
+up to
+`30` including.
+
+```php
+for ($i = 10; $i >= 0; $i--) {
+      echo #i."<br>";
+}
+```
+
+It will display
+`
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+`
+#### Looping through arrays
+
+```php
+$family = array("rob", "Tommy", "M");
+
+for ($i = 0; $i < sizeof($family); $i++) {      
+    echo $family[$i]."<br>";
+}
+```
+It will display -->
+`
+rob
+Tommy
+M
+`
+2nd method is `foreach` loop
+
+```php
+foreach ($family as $key => $value) {
+      echo "Array item ".$key." is ".$value."<br>";
+}
+```
+it will display -->
+
+`Array item o is Rob`
+
+`Array item 1 is Tommy`
+
+`Array item 2 is M`
+
+#### PHP, While Loops
+
+```php
+$i = 0;
+while ($i <= 10) {
+    echo $i."<br>";
+    $i++;
+}
+```
+It shows
+`
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+`
+
+```php
+$i = 5;
+while ($i <= 25) {
+    echo $i."<br>";
+    $i = $i +5;
+}
+```
+
+if you use instead of $i++ e.g.
+
+$i = $i +5;
+
+it will increase numbers by 5 and show
+`
+5
+10
+15
+20
+25
+`
+or another way:
+```php
+$i = 1;
+while ($i <= 10) {
+    $j = $i * 5
+    echo $j."<br>";
+    $i++;
+}
+```
+
+To present items from the array:  
+```php
+$family = array ("A", "B");
+$i = 0;
+while ($i < sizeof($family)) {
+echo $family[$i]."<br>";
+$i++;
+}
+```
+It shows items:
+`
+A
+B
+`
