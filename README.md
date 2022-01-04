@@ -7,7 +7,7 @@
 ### Facts:
 * The first word of the acronym is an acronym, recursive backronym, originally the acronym stood for Personal Home Page
 * Developed in 1994
-* PHP is a server language. It can send emails, process a contact form, or connect to a database. HTML, CSS, JS are run on web browser, and we can not use them to store the user info permanently, because the browser gets closed down and we want a way to store that data somewhere centrally so that user can access it anywhere on the web.
+* PHP is a server scripting language. It can send emails, process a contact form, or connect to a database. HTML, CSS, JS are run on web browser, and we can not use them to store the user info permanently, because the browser gets closed down and we want a way to store that data somewhere centrally so that user can access it anywhere on the web.
 
 (HTML...CSS...JS...WebGL)Web Browser <---->internet<----->Web Server (PHP...MySQL, Apache, Server Modules)
 
