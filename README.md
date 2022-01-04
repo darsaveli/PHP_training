@@ -416,3 +416,32 @@ It shows items:
 A
 B
 `
+<h1 align="center"> GET Variables & POST Variables </h1>
+
+#### GET Variables & POST Variables are used to create interaction between user and server.
+
+1. Get variable in the URL string --> `/?name=rob&password=1234&gender=male`
+
+to access them need to know that they are contained in the $_get. So you need to type
+```php
+print_r($_GET);
+```
+to present a particular value:
+```php
+echo $_GET("gender")
+```
+2. Use a form: 
+
+As HTML:
+```html
+<p>What is you name?</p>
+<form>
+    <input name="name" type="text">
+    <input type="submit" value="Go!">
+</form>
+```
+For PHP:
+```php
+echo "Hi there "$_GET['name']."!"
+```
+and you get Hi there and any name you input in the form's input field.
