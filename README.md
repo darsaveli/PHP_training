@@ -468,3 +468,8 @@ print_r($_POST);
 If you will want to submit some data twice, you'll get a pop-up telling you to confirm the resumbition. 
 
 - Challenge: When a user enters their name program checks to see if the name is on the array of usernames. If so, hello ...name... is shown on the page. (filename: checking_users.php)
+
+<h1 align="center"> Mini Projects </h1>
+
+#### Sending and email with PHP
+#### A contact form 
