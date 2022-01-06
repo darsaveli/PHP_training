@@ -474,4 +474,4 @@ If you will want to submit some data twice, you'll get a pop-up telling you to c
 <h1 align="center"> Mini Projects </h1>
 
 #### 1. Sending and email with PHP
-#### 2. A contact form 
+#### 2. Weather Scraper
