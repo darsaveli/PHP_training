@@ -473,5 +473,5 @@ If you will want to submit some data twice, you'll get a pop-up telling you to c
 
 <h1 align="center"> Mini Projects </h1>
 
-#### 1. A Contact Form 
+#### 1. A Working Contact Form (which sends emails)
 #### 2. Weather Scraper
