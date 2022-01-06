@@ -446,7 +446,8 @@ echo "Hi there "$_GET['name']."!"
 ```
 and you get Hi there and any name you input in the form's input field.
 
-- Challenge: filename: is_it_prime.php
+- Challenge: 
+  Filename: [is_it_prime.php](https://github.com/darsaveli/PHP_training/blob/main/is_it_prime.php)
 
 <h1 align="center"> POST Variables </h1>
 
@@ -467,7 +468,8 @@ print_r($_POST);
 
 If you will want to submit some data twice, you'll get a pop-up telling you to confirm the resumbition. 
 
-- Challenge: When a user enters their name program checks to see if the name is on the array of usernames. If so, hello ...name... is shown on the page. (filename: checking_users.php)
+- Challenge: When a user enters their name program checks to see if the name is on the array of usernames. If so, hello ...name... is shown on the page. 
+ Filename: [checking_users.php](https://github.com/darsaveli/PHP_training/blob/main/checking_users.php)
 
 <h1 align="center"> Mini Projects </h1>
 
