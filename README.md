@@ -416,7 +416,7 @@ It shows items:
 A
 B
 `
-<h1 align="center"> GET Variables & POST Variables </h1>
+<h1 align="center"> GET Variables </h1>
 
 #### GET Variables & POST Variables are used to create interaction between user and server.
 
@@ -445,3 +445,26 @@ For PHP:
 echo "Hi there "$_GET['name']."!"
 ```
 and you get Hi there and any name you input in the form's input field.
+
+- Challenge: filename: is_it_prime.php
+
+<h1 align="center"> POST Variables </h1>
+
+#### Post Variables are different than GET Variables, because they aren't encoded in URL, so that makes them a bit more secure. 
+
+```html
+<p>What is you name?</p>
+<form method="post">    
+    <input name="name" type="text">    
+    <input type="submit" value="Go!">
+</form>
+```
+
+for PHP -->
+```php
+print_r($_POST);
+```
+
+If you will want to submit some data twice, you'll get a pop-up telling you to confirm the resumbition. 
+
+- Challenge: When a user enters their name program checks to see if the name is on the array of usernames. If so, hello ...name... is shown on the page. (filename: checking_users.php)
